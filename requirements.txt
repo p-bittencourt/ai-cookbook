@@ -1,0 +1,5 @@
+requests
+ipykernel
+python-dotenv
+google-genai
+pydantic
