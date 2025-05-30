@@ -84,7 +84,7 @@ for part in completion.candidates[0].content.parts:  # type: ignore
         print(f"Function execution result: {function_result}")
 
         contents.append(
-            types.Content(role="model", parts=[types.Part(function_call=tool_call)])
+            types.Content(role="model", parts=[types.Part(function_call=tool_call)])  # type: ignore
         )
         contents.append(types.Content(role="user", parts=[function_response_part]))
 
